@@ -1,26 +1,23 @@
-import Hero from "@/components/sections/Hero";
-import AboutPreview from "@/components/sections/AboutPreview";
-import ServicesGrid from "@/components/sections/ServicesGrid";
-import HowItWorks from "@/components/sections/HowItWorks";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import CTABanner from "@/components/layout/CTABanner";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Testimonials from "./components/Testimonials";
+import CTABanner from "./components/CTABanner";
+import Footer from "./components/Footer";
 
-const homeSteps = [
-  { step: 1, title: "We Recruit", description: "Source top talent tailored to your needs" },
-  { step: 2, title: "We Employ", description: "Handle payroll, compliance, and contracts" },
-  { step: 3, title: "You Manage", description: "Direct and manage your team" },
-  { step: 4, title: "We Handle the Rest", description: "HR, taxes, and administration" },
-];
-
-export default function HomePage() {
+export default function Home() {
   return (
     <>
-      <Hero />
-      <AboutPreview />
-      <ServicesGrid />
-      <HowItWorks steps={homeSteps} />
-      <WhyChooseUs />
-      <CTABanner />
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <Testimonials />
+        <CTABanner />
+      </main>
+      <Footer />
     </>
   );
 }

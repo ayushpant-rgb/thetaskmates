@@ -1,38 +1,30 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import { Playfair_Display, DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-playfair",
   display: "swap",
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  variable: "--font-dm-mono",
+  weight: ["300", "400", "500"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Build Your Offshore Team Fast | Save 60% on Staffing | TaskMates",
-    template: "%s | TaskMates",
-  },
+  title: "Elevate Biz Hub — Smart Task Management for Teams",
   description:
-    "Build your offshore team with TaskMates. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
-  metadataBase: new URL("https://www.thetaskmates.com"),
-  openGraph: {
-    type: "website",
-    locale: "en_AU",
-    siteName: "TaskMates",
-    title: "Build Your Offshore Team Fast | Save 60% on Staffing | TaskMates",
-    description:
-      "Build your offshore team with TaskMates. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
-  },
+    "Streamline your team's workflow with intelligent task management, real-time collaboration, and powerful analytics.",
 };
 
 export default function RootLayout({
@@ -43,12 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${plusJakarta.variable} font-body antialiased text-primary bg-white`}
+        className={`${playfair.variable} ${dmSans.variable} ${dmMono.variable} font-sans antialiased`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        {children}
       </body>
     </html>
   );

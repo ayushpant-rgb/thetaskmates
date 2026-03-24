@@ -9,28 +9,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#111111",
-          light: "#2D2D2D",
+        ebh: {
+          teal: "#009999",
+          "teal-dark": "#006E6E",
+          "teal-light": "#00BFBF",
+          "teal-pale": "#E6F7F7",
+          orange: "#FF6B35",
+          "orange-hover": "#E55A24",
+          "orange-pale": "#FFF1EB",
+          "neutral-50": "#F8FAFA",
+          "neutral-100": "#F0F4F4",
+          "neutral-200": "#D1DEDE",
+          "neutral-500": "#6B7A7A",
+          "neutral-800": "#2D3838",
+          "neutral-900": "#1A2424",
         },
-        accent: {
-          DEFAULT: "#D4F747",
-          light: "#E2F97B",
-        },
-        neutral: {
-          50: "#F7F8FA",
-          200: "#E8E8ED",
-          700: "#4A4A5A",
-          900: "#1A1A2E",
-        },
-        success: "#22C55E",
       },
       fontFamily: {
-        heading: ["var(--font-inter)", "sans-serif"],
-        body: ["var(--font-plus-jakarta)", "sans-serif"],
+        display: ["var(--font-playfair)", "Georgia", "serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-dm-mono)", "monospace"],
       },
-      maxWidth: {
-        container: "1200px",
+      boxShadow: {
+        "teal-sm": "0 2px 8px 0 rgba(0,153,153,0.12)",
+        "teal-md": "0 4px 20px 0 rgba(0,153,153,0.18)",
+        "orange-md": "0 4px 20px 0 rgba(255,107,53,0.22)",
       },
     },
   },
