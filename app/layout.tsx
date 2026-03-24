@@ -19,19 +19,19 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Build Your Offshore Team Fast | Save 60% on Staffing | TaskMates",
-    template: "%s | TaskMates",
+    default: "Build Your Offshore Team Fast | Save 60% on Staffing | Elevate Biz Hub",
+    template: "%s | Elevate Biz Hub",
   },
   description:
-    "Build your offshore team with TaskMates. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
-  metadataBase: new URL("https://www.thetaskmates.com"),
+    "Build your offshore team with Elevate Biz Hub. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
+  metadataBase: new URL("https://www.elevatebizhub.in"),
   openGraph: {
     type: "website",
     locale: "en_AU",
-    siteName: "TaskMates",
-    title: "Build Your Offshore Team Fast | Save 60% on Staffing | TaskMates",
+    siteName: "Elevate Biz Hub",
+    title: "Build Your Offshore Team Fast | Save 60% on Staffing | Elevate Biz Hub",
     description:
-      "Build your offshore team with TaskMates. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
+      "Build your offshore team with Elevate Biz Hub. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
   },
 };
 

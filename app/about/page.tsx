@@ -6,9 +6,9 @@ import StatsSection from "./StatsSection";
 import CTABanner from "@/components/layout/CTABanner";
 
 export const metadata: Metadata = {
-  title: "About TaskMates — Your Trusted Offshore HR Partner",
+  title: "About Elevate Biz Hub — Your Trusted Offshore HR Partner",
   description:
-    "Learn how TaskMates helps businesses build offshore teams with EOR services, reducing costs and simplifying HR management.",
+    "Learn how Elevate Biz Hub helps businesses build offshore teams with EOR services, reducing costs and simplifying HR management.",
 };
 
 export default function AboutPage() {

@@ -72,7 +72,7 @@ export default function ContactSection() {
 
             {/* Closing line */}
             <p className="text-neutral-700 text-sm italic border-t border-neutral-200 pt-6">
-              &ldquo;Elevate your business. Simplify your operations. Build your team — with TaskMates.&rdquo;
+              &ldquo;Elevate your business. Simplify your operations. Build your team — with Elevate Biz Hub.&rdquo;
             </p>
           </motion.div>
         </div>

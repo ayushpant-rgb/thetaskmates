@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "TaskMates",
+  name: "Elevate Biz Hub",
   tagline: "Your Offshore Team. Your Rules.",
-  domain: "www.thetaskmates.com",
-  email: "hello@thetaskmates.com",
+  domain: "www.elevatebizhub.in",
+  email: "info@elevatebizhub.in",
   whatsapp: "+91-XXXXXXXXXX",
   calendlyUrl: "#",
   parentCompany: "Elevate Biz Hub",
@@ -63,7 +63,7 @@ export const services = [
     title: "Real Estate Support",
     icon: "Building" as const,
     description: "Specialized support for property and real estate businesses.",
-    items: ["Property Management Admin", "Leasing Support", "CRM Updates"],
+    items: ["Property Management Support", "Cold Calling", "Sales Support", "Admin and Operations"],
   },
 ];
 
@@ -116,7 +116,7 @@ export const homeHero = {
 
 export const aboutPreview = {
   text: [
-    "TaskMates is a leading offshore HR and workforce solutions company helping businesses across Australia, Europe, and the USA build high-performing offshore teams.",
+    "Elevate Biz Hub is a leading offshore HR and workforce solutions company helping businesses across Australia, Europe, and the USA build high-performing offshore teams.",
     "As your trusted Employer of Record (EOR), we handle everything behind the scenes so you can focus on scaling your business.",
   ],
   linkText: "Learn More About Us",

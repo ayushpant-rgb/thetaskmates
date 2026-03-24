@@ -13,9 +13,9 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
-      <div className="max-w-container mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-heading text-2xl text-primary">
-          {siteConfig.name}
+      <div className="max-w-container mx-auto px-6 h-24 flex items-center justify-between">
+        <Link href="/" className="flex items-center">
+          <img src="/logo.png" alt={siteConfig.name} className="h-[72px] w-auto" />
         </Link>
 
         {/* Desktop nav */}

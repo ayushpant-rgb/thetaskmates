@@ -7,16 +7,17 @@ import { homeHero } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="relative bg-[#FAFAFA] overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
-      {/* Top Banner (Maze Style) */}
-      <div className="absolute top-0 left-0 w-full bg-primary-dark text-white py-2 text-center z-50 flex items-center justify-center gap-3">
-        <span className="text-sm font-medium">✨ Build your offshore team fast and save up to 60% on staffing.</span>
-        <a href="/contact" className="text-sm font-semibold hover:text-accent transition-colors flex items-center">
-          Get started <ArrowRight className="ml-1 w-3 h-3" />
-        </a>
-      </div>
+    <>
+    {/* Top Banner */}
+    <div className="bg-primary-dark text-white py-2.5 text-center flex items-center justify-center gap-3">
+      <span className="text-sm font-medium">✨ Build your offshore team fast and save up to 60% on staffing.</span>
+      <a href="/contact" className="text-sm font-semibold hover:text-accent transition-colors flex items-center">
+        Get started <ArrowRight className="ml-1 w-3 h-3" />
+      </a>
+    </div>
 
-      <div className="max-w-container mx-auto px-6 relative z-10 mt-10">
+    <section className="relative bg-[#FAFAFA] lg:overflow-hidden pt-12 pb-16 md:pt-16 md:pb-28">
+      <div className="max-w-container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column: Text Content */}
           <motion.div
@@ -51,7 +52,7 @@ export default function Hero() {
               </Button>
             </div>
             
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <div className="flex -space-x-3">
                 {[
                   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
@@ -102,5 +103,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }

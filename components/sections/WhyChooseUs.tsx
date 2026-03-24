@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
             className="mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl text-white mb-4">Your Trusted Offshore HR Partner</h2>
-            <p className="text-white/70 text-lg max-w-2xl">TaskMates is your go-to offshore HR partner, helping businesses efficiently build, manage, and scale offshore teams. As your Employer of Record (EOR), we legally employ your staff in offshore locations while you retain full control over their daily work.</p>
+            <p className="text-white/70 text-lg max-w-2xl">Elevate Biz Hub is your go-to offshore HR partner, helping businesses efficiently build, manage, and scale offshore teams. As your Employer of Record (EOR), we legally employ your staff in offshore locations while you retain full control over their daily work.</p>
           </motion.div>
           <div className="hidden lg:block w-full h-[320px] rounded-[32px] overflow-hidden shadow-2xl relative">
             <img src="/trusted-hr.png" alt="Trusted HR Partner" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
@@ -35,8 +35,8 @@ export default function WhyChooseUs() {
                 transition={{ duration: 0.4, delay: i * 0.08 }}
                 className="bg-white/10 border border-white/20 rounded-xl p-6 flex items-start gap-4 backdrop-blur-sm"
               >
-                <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  {IconComponent && <IconComponent className="text-accent" size={20} />}
+                <div className="w-10 h-10 bg-white/15 rounded-lg flex items-center justify-center flex-shrink-0">
+                  {IconComponent && <IconComponent className="text-white" size={20} />}
                 </div>
                 <p className="text-white text-sm font-medium">{benefit.text}</p>
               </motion.div>

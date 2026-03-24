@@ -14,7 +14,7 @@ type CTABannerProps = {
 
 export default function CTABanner({
   headline = "Let\u2019s Build Your Offshore Team \u2014 The Smart Way",
-  subheadline = "Elevate your business with TaskMates and unlock global talent today.",
+  subheadline = "Elevate your business with Elevate Biz Hub and unlock global talent today.",
   primaryCta = "Book a Strategy Call",
   primaryHref = "/contact",
   secondaryCta = "Get a Proposal",

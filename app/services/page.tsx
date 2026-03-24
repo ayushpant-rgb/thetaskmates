@@ -6,7 +6,7 @@ import CTABanner from "@/components/layout/CTABanner";
 export const metadata: Metadata = {
   title: "Offshore Staffing Services for Every Business Function",
   description:
-    "Explore offshore staffing services including admin support, digital marketing, sales, bookkeeping, and more with TaskMates.",
+    "Explore offshore staffing services including admin support, digital marketing, sales, bookkeeping, and more with Elevate Biz Hub.",
 };
 
 export default function ServicesPage() {

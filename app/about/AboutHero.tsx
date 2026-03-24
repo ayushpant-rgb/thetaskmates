@@ -24,7 +24,7 @@ export default function AboutHero() {
               Your Trusted Offshore HR Partner
             </h1>
             <p className="text-white/85 text-lg leading-relaxed mb-4">
-              TaskMates is your go-to offshore HR partner, helping businesses efficiently
+              Elevate Biz Hub is your go-to offshore HR partner, helping businesses efficiently
               build, manage, and scale offshore teams.
             </p>
             <p className="text-white/75 text-base leading-relaxed mb-8">
