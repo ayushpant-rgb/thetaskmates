@@ -36,7 +36,7 @@ export default function AboutPreview() {
             </div>
             
             <div className="mt-10">
-              <Button href="/about" className="!bg-primary !text-white hover:!bg-primary/90 rounded-full px-8 py-4 font-medium" size="lg">
+              <Button href="/about" className="!bg-accent !text-white hover:!bg-accent-hover rounded-full px-8 py-4 font-medium" size="lg">
                 {aboutPreview.linkText || "Learn More About Us"}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

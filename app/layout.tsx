@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans, DM_Mono } from "next/font/google";
+import { Playfair_Display, DM_Sans } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -14,17 +17,22 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const dmMono = DM_Mono({
-  subsets: ["latin"],
-  variable: "--font-dm-mono",
-  weight: ["300", "400", "500"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "Elevate Biz Hub — Smart Task Management for Teams",
+  title: {
+    default: "Build Your Offshore Team Fast | Save 60% on Staffing | TaskMates",
+    template: "%s | TaskMates",
+  },
   description:
-    "Streamline your team's workflow with intelligent task management, real-time collaboration, and powerful analytics.",
+    "Build your offshore team with TaskMates. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
+  metadataBase: new URL("https://www.thetaskmates.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_AU",
+    siteName: "TaskMates",
+    title: "Build Your Offshore Team Fast | Save 60% on Staffing | TaskMates",
+    description:
+      "Build your offshore team with TaskMates. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
+  },
 };
 
 export default function RootLayout({
@@ -35,9 +43,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${dmSans.variable} ${dmMono.variable} font-sans antialiased`}
+        className={`${playfair.variable} ${dmSans.variable} font-body antialiased text-neutral-800 bg-neutral-50`}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

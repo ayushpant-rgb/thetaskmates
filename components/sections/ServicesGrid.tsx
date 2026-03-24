@@ -25,7 +25,7 @@ export default function ServicesGrid({ expanded = false, showCta = true }: Servi
             alt="Offshore team management" 
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-transparent to-transparent flex items-end p-8 md:p-12">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#006E6E]/80 via-transparent to-transparent flex items-end p-8 md:p-12">
             <div>
               <h3 className="text-white text-3xl md:text-4xl font-bold font-heading mb-2 tracking-tight">Empowering Global Growth</h3>
               <p className="text-white/80 max-w-lg">Scale operations effortlessly with access to world-class talent managed and nurtured by our expert teams.</p>

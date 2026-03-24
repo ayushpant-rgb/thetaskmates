@@ -11,7 +11,7 @@ export default function AboutHero() {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-primary to-primary-light py-20 md:py-28 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-primary-dark to-primary py-20 md:py-28 relative overflow-hidden">
       <div className="max-w-container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div

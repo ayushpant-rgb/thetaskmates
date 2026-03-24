@@ -6,7 +6,7 @@ import { benefits } from "@/lib/constants";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 md:py-24 bg-primary text-white">
+    <section className="py-20 md:py-24 bg-primary-dark text-white">
       <div className="max-w-container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <motion.div

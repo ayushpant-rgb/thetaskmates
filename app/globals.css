@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #F8FAFA;
-  --foreground: #1A2424;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: #2D3838;
+  background: #F8FAFA;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+::selection {
+  background-color: #009999;
+  color: #FFFFFF;
 }

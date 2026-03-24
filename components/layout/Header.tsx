@@ -33,7 +33,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Button href="/contact" size="default" className="!bg-primary !text-white hover:!bg-primary/90 rounded-full px-6">
+          <Button href="/contact" size="default" className="!bg-accent !text-white hover:!bg-accent-hover rounded-full px-6">
             Get Started
           </Button>
         </nav>
@@ -65,7 +65,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Button href="/contact" className="w-full mt-2 !bg-primary !text-white hover:!bg-primary/90 rounded-full">
+          <Button href="/contact" className="w-full mt-2 !bg-accent !text-white hover:!bg-accent-hover rounded-full">
             Get Started
           </Button>
         </div>

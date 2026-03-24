@@ -21,7 +21,7 @@ export default function CTABanner({
   secondaryHref = "/contact",
 }: CTABannerProps) {
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-primary-dark py-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

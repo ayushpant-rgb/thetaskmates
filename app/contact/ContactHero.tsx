@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ContactHero() {
   return (
-    <section className="bg-gradient-to-br from-primary to-primary-light py-20 md:py-28">
+    <section className="bg-gradient-to-br from-primary-dark to-primary py-20 md:py-28">
       <div className="max-w-container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="relative bg-[#FAFAFA] overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
       {/* Top Banner (Maze Style) */}
-      <div className="absolute top-0 left-0 w-full bg-primary text-white py-2 text-center z-50 flex items-center justify-center gap-3">
+      <div className="absolute top-0 left-0 w-full bg-primary-dark text-white py-2 text-center z-50 flex items-center justify-center gap-3">
         <span className="text-sm font-medium">✨ Build your offshore team fast and save up to 60% on staffing.</span>
         <a href="/contact" className="text-sm font-semibold hover:text-accent transition-colors flex items-center">
           Get started <ArrowRight className="ml-1 w-3 h-3" />
@@ -25,7 +25,7 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
             className="max-w-2xl"
           >
-            <h1 className="font-heading font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-primary leading-[1.1] tracking-tight mb-6">
+            <h1 className="font-heading font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-neutral-900 leading-[1.1] tracking-tight mb-6">
               {homeHero.headline}
             </h1>
             <p className="text-neutral-600 text-lg md:text-xl lg:text-[22px] leading-relaxed mb-10 max-w-[540px]">
@@ -37,7 +37,7 @@ export default function Hero() {
                 href="/contact" 
                 variant="primary" 
                 size="lg" 
-                className="rounded-full shadow-lg hover:shadow-xl transition-all font-medium py-3.5 px-8 text-base !bg-primary !text-white hover:!bg-primary-light"
+                className="rounded-full shadow-lg hover:shadow-xl transition-all font-medium py-3.5 px-8 text-base !bg-accent !text-white hover:!bg-accent-hover"
               >
                 {homeHero.primaryCta || "Learn more"}
               </Button>
@@ -68,10 +68,10 @@ export default function Hero() {
                 ))}
               </div>
               <div className="flex flex-col">
-                <div className="flex text-[#F59E0B] text-sm mb-0.5 tracking-widest">
+                <div className="flex text-accent text-sm mb-0.5 tracking-widest">
                   ★★★★★
                 </div>
-                <p className="text-primary font-semibold text-sm">
+                <p className="text-neutral-900 font-semibold text-sm">
                   {homeHero.socialProof}
                 </p>
               </div>

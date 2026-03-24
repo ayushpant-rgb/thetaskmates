@@ -3,23 +3,23 @@ import { siteConfig, footerLinks } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-primary-dark text-white">
       <div className="max-w-container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="font-heading text-2xl mb-4">{siteConfig.name}</h3>
-            <p className="text-neutral-400 text-sm leading-relaxed mb-4">
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
               {siteConfig.tagline}
             </p>
-            <p className="text-neutral-400 text-sm">
+            <p className="text-white/60 text-sm">
               A division of {siteConfig.parentCompany}
             </p>
           </div>
 
           {/* Company links */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-neutral-300">
+            <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-white/70">
               Company
             </h4>
             <ul className="space-y-3">
@@ -27,7 +27,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-400 text-sm hover:text-white transition-colors"
+                    className="text-white/60 text-sm hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
 
           {/* Services links */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-neutral-300">
+            <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-white/70">
               Services
             </h4>
             <ul className="space-y-3">
@@ -46,7 +46,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-neutral-400 text-sm hover:text-white transition-colors"
+                    className="text-white/60 text-sm hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -57,10 +57,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-neutral-300">
+            <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-white/70">
               Contact
             </h4>
-            <ul className="space-y-3 text-neutral-400 text-sm">
+            <ul className="space-y-3 text-white/60 text-sm">
               <li>{siteConfig.email}</li>
               <li>WhatsApp: {siteConfig.whatsapp}</li>
               <li>India (Operations)</li>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-neutral-800 mt-12 pt-8 text-center text-neutral-500 text-sm">
+        <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/50 text-sm">
           &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </div>
       </div>
