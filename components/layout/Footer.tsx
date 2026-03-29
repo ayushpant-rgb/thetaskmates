@@ -62,9 +62,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-white/60 text-sm">
               <li>{siteConfig.email}</li>
-              <li>WhatsApp: {siteConfig.whatsapp}</li>
-              <li>India (Operations)</li>
-              <li>Serving Australia &amp; UK</li>
+              <li>UAE: {siteConfig.phones.uae}</li>
+              <li>AU: {siteConfig.phones.australia}</li>
+              <li>Landline: {siteConfig.phones.australiaLandline}</li>
+            </ul>
+            <h4 className="font-semibold text-sm uppercase tracking-wider mt-6 mb-4 text-white/70">
+              Offices
+            </h4>
+            <ul className="space-y-3 text-white/60 text-sm">
+              {siteConfig.offices.map((office) => (
+                <li key={office.label}>{office.address}</li>
+              ))}
             </ul>
           </div>
         </div>

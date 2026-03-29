@@ -1,11 +1,30 @@
 export const siteConfig = {
   name: "Elevate Biz Hub",
   tagline: "Your Offshore Team. Your Rules.",
-  domain: "www.elevatebizhub.in",
-  email: "info@elevatebizhub.in",
-  whatsapp: "+91-XXXXXXXXXX",
+  domain: "www.elevatebizhub.com.au",
+  email: "info@elevatebizhub.com.au",
+  whatsapp: "+971581660001",
   calendlyUrl: "#",
   parentCompany: "Elevate Biz Hub",
+  phones: {
+    uae: "+971 58 166 0001",
+    australia: "+61 413 324 555",
+    australiaLandline: "02 8935 6491",
+  },
+  offices: [
+    {
+      label: "Dubai, UAE",
+      address: "Dubai Silicon Oasis, Dubai, UAE",
+    },
+    {
+      label: "Sydney, Australia",
+      address: "Nexus Building, Columbia St, Norwest, Sydney, Australia",
+    },
+    {
+      label: "India (Operations)",
+      address: "Gyan Khand-4, Indirapuram, UP, India",
+    },
+  ],
 };
 
 export const navigation = [

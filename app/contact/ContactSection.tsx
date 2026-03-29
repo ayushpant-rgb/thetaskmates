@@ -56,16 +56,19 @@ export default function ContactSection() {
               <div className="flex items-start gap-3">
                 <Phone className="text-primary w-5 h-5 mt-0.5" />
                 <div>
-                  <p className="text-sm font-medium text-neutral-900">WhatsApp</p>
-                  <p className="text-sm text-neutral-700">{siteConfig.whatsapp}</p>
+                  <p className="text-sm font-medium text-neutral-900">Phone</p>
+                  <p className="text-sm text-neutral-700">UAE: {siteConfig.phones.uae}</p>
+                  <p className="text-sm text-neutral-700">AU: {siteConfig.phones.australia}</p>
+                  <p className="text-sm text-neutral-700">Landline: {siteConfig.phones.australiaLandline}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="text-primary w-5 h-5 mt-0.5" />
                 <div>
-                  <p className="text-sm font-medium text-neutral-900">Locations</p>
-                  <p className="text-sm text-neutral-700">India (Operations)</p>
-                  <p className="text-sm text-neutral-700">Serving Australia &amp; UK</p>
+                  <p className="text-sm font-medium text-neutral-900">Offices</p>
+                  {siteConfig.offices.map((office) => (
+                    <p key={office.label} className="text-sm text-neutral-700">{office.address}</p>
+                  ))}
                 </div>
               </div>
             </div>
