@@ -25,6 +25,15 @@ export const metadata: Metadata = {
   description:
     "Build your offshore team with Elevate Biz Hub. Hire full-time or part-time professionals while we manage HR, payroll, and compliance — save up to 60% today.",
   metadataBase: new URL("https://www.elevatebizhub.in"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_AU",
